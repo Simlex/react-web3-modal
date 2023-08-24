@@ -7,7 +7,7 @@ import { configureChains, createConfig, WagmiConfig } from 'wagmi'
 import { arbitrum, mainnet, polygon } from 'wagmi/chains'
 
 const chains = [arbitrum, mainnet, polygon]
-const projectId = '0f1ee345cfc20ab709b3f2852e0652ac'
+const projectId = '' // Insert your project ID here. Get here: https://cloud.walletconnect.com/app
 
 const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
 const wagmiConfig = createConfig({
